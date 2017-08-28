@@ -1,0 +1,91 @@
+﻿body, td { 
+    font-family: Segoe UI, Verdana 
+} 
+h1 { 
+    padding: .5em; 
+    padding-top: 0; 
+    font-weight: bold; 
+    font-size: 1.5em; border-bottom: 2px solid gray; 
+} 
+a {
+    color: blue;
+    text-decoration: underline;
+    font-size: 15px;
+    cursor: pointer;
+}
+div#content { 
+    padding: .9em;
+} 
+table.movies td, table.movies th { 
+    border-bottom: 1px solid gray; 
+} 
+table.movies { 
+    border-collapse: collapse; 
+    margin-left: 10px;;
+} 
+.movie-name__movies {
+    width: 500px;
+    text-align: left;
+}
+form > input[type="submit"] {
+    border: none;
+    background-color: white;
+    color: blue;
+    text-decoration: underline;
+    font-size: 15px;
+    cursor: pointer;
+}
+.movie-time__movies {
+    width: 150px;
+    text-align: center;
+}
+.movie-action__movies {
+    width: 100px;
+    text-align: center
+}
+form.delete-movie {
+    text-align: center;
+} 
+input#ShowTime {
+    width: 130px;
+    text-align: center;
+}
+div.Message { 
+    background: gray; 
+    color:White; 
+    padding: .2em; 
+    margin-top:.25em; 
+} 
+ 
+.field-validation-error { 
+    color: red; 
+    display: block; 
+} 
+.field-validation-valid { 
+    display: none; 
+} 
+.input-validation-error { 
+    border: 1px solid red; 
+    background-color: #ffeeee; 
+} 
+.validation-summary-errors { 
+    font-weight: bold; 
+    color: red; 
+} 
+.validation-summary-valid { 
+    display: none; 
+} 
+
+.editor-field { 
+    margin-bottom: .8em; 
+} 
+.editor-label { 
+    font-weight: bold; 
+} 
+.text-box { 
+    width: 25em; 
+} 
+.multi-line { 
+    height: 5em; 
+    font-family: Segoe UI, Verdana;
+} 

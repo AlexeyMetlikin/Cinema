@@ -1,0 +1,13 @@
+﻿@model CinemaServer.Models.Entities.Movie
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>@ViewBag.Title</h1>
+@using (Html.BeginForm("EditMovie", "Cinema", FormMethod.Post))
+{
+    @Html.EditorForModel()
+    <input type="submit" value="Сохранить" />
+    @Html.ActionLink("Отмена", "Index")
+}

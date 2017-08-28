@@ -1,0 +1,30 @@
+﻿@model IEnumerable<CinemaServer.Models.Entities.Movie>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h1>Movies</h1>
+<table class="movies">
+    <tr>
+        <th class="movie-name__movies">Название</th>
+        <th class="movie-time__movies">Время показа</th>
+        <th class="movie-action__movies"></th>
+    </tr>
+    @foreach (var movie in Model)
+    {
+        <tr>
+            <td class="movie-name__movies">@Html.ActionLink(movie.Name, "EditMovie", new { movie.MovieId })</td>
+            <td class="movie-time__movies">@Html.DisplayFor(m => movie.ShowTime) </td>
+            <td class="movie-action__movies">
+                @using (Html.BeginForm("DeleteMovie", "Cinema", FormMethod.Post, new { @class = "delete-movie"}))
+                {
+                    @Html.Hidden("MovieId", movie.MovieId)
+                    <input type="submit" value="Удалить" />
+                }
+            </td>
+        </tr>
+    }
+</table>
+<p>@Html.ActionLink("Добавить фильм", "CreateMovie")</p>
+
